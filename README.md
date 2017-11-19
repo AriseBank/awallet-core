@@ -1,4 +1,6 @@
-## Download
+![alt text](https://preview.ibb.co/jrMd06/arisecoin_wallet.png "AriseCoin header")
+
+## Download Latest Releases
 [Latest Release](https://github.com/arisebank/awallet-core/releases)
 
 ## Features
