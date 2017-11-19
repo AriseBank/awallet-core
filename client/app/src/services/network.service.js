@@ -84,13 +84,13 @@
         n = {
           mainnet: { //so far same as testnet
             nethash: '6e84d08bd299ed97c212c886c98a57e36545c8f5d645ca7eeae63a8bd62d8988',
-            peerseed: 'http://5.39.9.240:4001',
+            peerseed: 'http://212.47.254.188:2014',
             forcepeer: false,
             token: 'ACO',
-            symbol: 'Ѧ',
+            symbol: 'â',
             version: 0x17,
             slip44: 111,
-            explorer: 'https://explorer.aco.io',
+            explorer: 'http://explorer.arisecoin.com',
             exchanges: {
               changer: "aco_ACO"
             },
@@ -100,12 +100,12 @@
           },
           devnet: {
             nethash: '578e820911f24e039733b45e4882b73e301f813a0d2c31330dafda84534ffa23',
-            peerseed: 'http://167.114.29.55:4002',
-            token: 'DARK',
-            symbol: 'DѦ',
+            peerseed: 'http://167.114.29.55:2010',
+            token: 'DACO',
+            symbol: 'Dâ',
             version: 30,
             slip44: 1, //all coin testnet
-            explorer: 'http://dexplorer.aco.io',
+            explorer: 'http://dexplorer.arisecoin.com',
             background: "#222299",
             theme: "default",
             themeDark: false,
@@ -307,20 +307,20 @@
       return connection.promise;
     }
 
-    //function getLatestClientVersion() {
-    //  var deferred = $q.defer();
-    //  var url = 'https://api.github.com/repos/arisebank/awallet-core/releases/latest';
-    //  $http.get(url, { timeout: 5000 })
-    //    .then(function(res) {
-    //      deferred.resolve(res.data.tag_name);
-    //    }, function(e) {
-    //      // deferred.reject(gettextCatalog.getString("Cannot get latest version"));
-    //    });
-    //  return deferred.promise;
-  //  }
+  function getLatestClientVersion() {
+   var deferred = $q.defer();
+   var url = 'https://api.github.com/repos/arisebank/awallet-core/releases/latest';
+   $http.get(url, { timeout: 5000 })
+   .then(function(res) {
+   deferred.resolve(res.data.tag_name);
+   }, function(e) {
+   deferred.reject(gettextCatalog.getString("Cannot get latest version"));
+   });
+   return deferred.promise;
+  }
 
     listenNetworkHeight();
-    //getPrice();
+    // getPrice();
     pickRandomPeer();
 
 
@@ -338,7 +338,7 @@
       broadcastTransaction: broadcastTransaction,
       pickRandomPeer: pickRandomPeer,
       getLatestClientVersion: getLatestClientVersion,
-      //getPrice: getPrice
+      // getPrice: getPrice
     };
   }
 
