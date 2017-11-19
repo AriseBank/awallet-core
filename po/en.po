@@ -110,8 +110,8 @@ msgstr "Arab"
 msgid "Are you sure?"
 msgstr "Are you sure?"
 
-msgid "Aco Client"
-msgstr "Aco Client"
+msgid "aWallet Core"
+msgstr "aWallet Core"
 
 msgid "Background"
 msgstr "Background"
@@ -590,8 +590,8 @@ msgstr "QR Scanner"
 msgid "Quit"
 msgstr "Quit"
 
-msgid "Quit Aco Client?"
-msgstr "Quit Aco Client?"
+msgid "Quit aWallet Core?"
+msgstr "Quit aWallet Core?"
 
 msgid "Rank"
 msgstr "Rank"

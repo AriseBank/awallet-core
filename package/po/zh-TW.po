@@ -47,7 +47,7 @@ msgstr "批准"
 msgid "Are you sure?"
 msgstr "你確定？"
 
-msgid "Aco Client"
+msgid "aWallet Core"
 msgstr "ACO客戶端"
 
 msgid "Balance"
@@ -275,7 +275,7 @@ msgstr "生產率"
 msgid "Quit"
 msgstr "退出"
 
-msgid "Quit Aco Client?"
+msgid "Quit aWallet Core?"
 msgstr "退出ACO客戶端？"
 
 msgid "Rank"

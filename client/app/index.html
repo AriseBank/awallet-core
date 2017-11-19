@@ -54,7 +54,7 @@
 <body id="app" ng-app="acoclient" layout="column" ng-controller="AccountController as ul" md-theme="ul.currentTheme" background-style="ul.network.background" class="too-pale-background">
   <div class="splash" ng-cloak="">
     <div class="splash__title">
-      <p translate>Loading...</p>
+      <p translate>Loading aWallet Core...</p>
     </div>
   </div>
 
@@ -62,9 +62,9 @@
   <md-toolbar class="navbar" style="background-color: rgba(0, 0, 0, 0)" >
     <div class="md-toolbar-tools" style="-webkit-app-region: drag;">
       <img src="aco.png" alt="" height="40">
-      <md-button ng-click="ul.selected?ul.selected=null:ul.selected=ul.accounts[0]"><strong>{{ul.network.token}} <translate>Client</translate> - {{ul.clientVersion}}</strong></md-button>
-      <md-button class="new-version-button" ng-if="ul.clientVersion!=ul.latestClientVersion" onclick='require("electron").shell.openExternal("https://arisecoin.com/downloads/desktop/")' aria-label="New version available!">
-        <translate>New version available!</translate>
+      <md-button ng-click="ul.selected?ul.selected=null:ul.selected=ul.accounts[0]"><strong>aWallet Core - {{ul.clientVersion}}</strong></md-button>
+      <md-button class="new-version-button" ng-if="ul.clientVersion!=ul.latestClientVersion" onclick='require("electron").shell.openExternal("https://arisecoin.com/downloads/")' aria-label="New version available!">
+        <translate>New aWallet version available!</translate>
       </md-button>
       <md-button ng-if="ul.selected" class="menu" hide-gt-md ng-click="ul.toggleList()" aria-label="Show Account List">
         <md-icon md-svg-icon="menu"></md-icon>
@@ -75,7 +75,7 @@
 
       <any style="pointer-events: auto">
         <md-tooltip>
-          <translate>Switch Network</translate>
+          <translate>Switch Arise Network</translate>
         </md-tooltip>
         <md-menu>
           <md-button aria-label="Switch Network" ng-click="ul.openMenu($mdOpenMenu, $event)">
@@ -92,7 +92,7 @@
 
       <any style="pointer-events: auto">
         <md-tooltip>
-          <translate>Settings</translate>
+          <translate>aWallet Settings</translate>
         </md-tooltip>
         <md-menu>
           <md-button aria-label="Show Settings" ng-click="ul.openMenu($mdMenu.open, $event)">
@@ -127,23 +127,23 @@
               <hr>
               <md-list-item aria-label="Import Account" ng-click="ul.importAccount()">
                 <md-icon>file_download</md-icon>
-                <p translate>Import Account</p>
+                <p translate>Import AriseCoin Account</p>
               </md-list-item>
               <md-list-item aria-label="Create Account" ng-click="ul.createAccount()">
                 <md-icon>account_box</md-icon>
-                <p translate>Create Account</p>
+                <p translate>Create AriseCoin Account</p>
               </md-list-item>
               <md-list-item aria-label="Add Contact" ng-controller="AddressbookController as ab" ng-click="ab.addAddressbookContact()">
                 <md-icon md-font-library="material-icons">library_add</md-icon>
-                <p translate>Add Contact</p>
+                <p translate>Add AriseCoin Contact</p>
               </md-list-item>
               <md-list-item aria-label="Manage Networks" ng-click="ul.manageNetworks()">
                 <md-icon>network_check</md-icon>
-                <p translate>Manage Networks</p>
+                <p translate>Manage Arise Networks</p>
               </md-list-item>
               <md-list-item aria-label="Appearance" ng-click="ul.manageBackgrounds()">
                 <md-icon>landscape</md-icon>
-                <p translate>Appearance</p>
+                <p translate>aWallet Appearance</p>
               </md-list-item>
             </md-list>
           </md-menu-content>
@@ -173,7 +173,7 @@
                 {{ul.connectedPeer.error}}
               </md-list-item>
               <md-list-item md-colors="{background:'default-green'}" ng-if="ul.connectedPeer.isConnected">
-                <b translate>Delay</b> <span class="md-secondary">{{ul.connectedPeer.delay}}ms</span>
+                <b translate>Arise Network Delay</b> <span class="md-secondary">{{ul.connectedPeer.delay}}ms</span>
               </md-list-item>
             </md-list>
           </md-menu-content>
@@ -270,7 +270,7 @@
       <md-toolbar layout="row" md-scroll-shrink>
         <div class="md-toolbar-tools">
           <h2>
-            <translate>My Accounts</translate> {{ul.network.symbol}}{{ul.myAccountsBalance()}} / {{ul.myAccountsCurrencyBalance() | formatCurrency:ul}}
+            <translate>My Accounts</translate> {{ul.myAccountsBalance()}}{{ul.network.symbol}} / {{ul.myAccountsCurrencyBalance() | formatCurrency:ul}}
           </h2>
           <span flex></span>
           <md-button class="share" ng-click="ul.refreshAccountBalances()" aria-label="Refresh balances">
@@ -283,12 +283,12 @@
           <div class="md-toolbar-tools">
             <md-button ng-click="ul.importAccount()">
               <md-icon>file_download</md-icon>
-              <translate>Import Account</translate>
+              <translate>Import AriseCoin Account</translate>
             </md-button>
 
             <md-button ng-click="ul.createAccount()">
               <md-icon>account_box</md-icon>
-              <translate>Create Account</translate>
+              <translate>Create AriseCoin Account</translate>
             </md-button>
           </div>
         </md-toolbar>
@@ -313,7 +313,7 @@
                 {{it.username||it.address}}  <span ng-if="it.delegate">({{it.delegate.rate}})</span>
               </span>
               <span class="md-secondary">
-                {{ul.network.symbol}}{{it.balance/100000000}}
+                {{it.balance/100000000}}{{ul.network.symbol}}
               </span>
             </md-list-item>
           </md-list>
@@ -417,9 +417,9 @@
               <md-icon ng-if="ul.selected" style="pointer-events: auto" ng-click="" ng-mouseover="stats = ab.getStats(ul.selected.address, contact.address)" aria-label="Stats" class="md-secondary" md-menu-align-target>
                 info_outline
                 <md-tooltip md-direction="bottom" class="tooltip-multiline">
-                  {{'Expense' | translate}}: {{ul.network.symbol}}{{stats.income.amount}} ({{stats.income.transactions}} {{'Transactions' | translate | lowercase}})
+                  {{'Expense' | translate}}: {{stats.income.amount}}{{ul.network.symbol}} ({{stats.income.transactions}} {{'Transactions' | translate | lowercase}})
                   <br>
-                  {{'Income' | translate}}: {{ul.network.symbol}}{{stats.expend.amount}} ({{stats.expend.transactions}} {{'Transactions' | translate | lowercase}})
+                  {{'Income' | translate}}: {{stats.expend.amount}}{{ul.network.symbol}} ({{stats.expend.transactions}} {{'Transactions' | translate | lowercase}})
                 </md-tooltip>
               </md-icon>
             </span>
@@ -500,7 +500,7 @@
               </md-icon>
               </span>
               <span class="md-subhead description">
-                  <translate class="balance">Balance</translate> {{ul.network.symbol}}{{ul.selected.balance/100000000}}
+                  <translate class="balance">Balance</translate> {{ul.selected.balance/100000000}}{{ul.network.symbol}}
                   <md-button ng-click="ul.selectNextCurrency()">{{ul.myAccountsCurrencyBalance() | formatCurrency:ul}}</md-button>
                 </span>
             </md-card-title-text>

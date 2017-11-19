@@ -5,7 +5,7 @@ const electron = require('electron')
 const hooks = require('../hooks')
 const userData = require('../user_data')
 
-describe('ACO Client', function() {
+describe('aWallet Core', function() {
 
   hooks.createApp.bind(this)()
 
@@ -31,7 +31,7 @@ describe('ACO Client', function() {
       return hooks.beforeBlock.bind(this)()
     })
     
-    it('title is "Aco Client"', function () {
+    it('title is "aWallet Core"', function () {
       return this.app.client.getWindowCount().should.eventually.equal(1)
         .browserWindow.isMinimized().should.eventually.be.false
         .browserWindow.isDevToolsOpened().should.eventually.be.false
@@ -39,7 +39,7 @@ describe('ACO Client', function() {
         .browserWindow.isFocused().should.eventually.be.true
         .browserWindow.getBounds().should.eventually.have.property('width').and.be.above(0)
         .browserWindow.getBounds().should.eventually.have.property('height').and.be.above(0)
-        .browserWindow.getTitle().should.eventually.equal('Aco Client')
+        .browserWindow.getTitle().should.eventually.equal('aWallet Core')
     })
   })
 

@@ -53,7 +53,7 @@ msgstr "得票率"
 msgid "Are you sure?"
 msgstr "你确定？"
 
-msgid "Aco Client"
+msgid "aWallet Core"
 msgstr "Aco客户端"
 
 msgid "Balance"
@@ -284,7 +284,7 @@ msgstr "公钥"
 msgid "Quit"
 msgstr "退出"
 
-msgid "Quit Aco Client?"
+msgid "Quit aWallet Core?"
 msgstr "退出ACO客户端？"
 
 msgid "Rank"

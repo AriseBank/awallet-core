@@ -44,7 +44,7 @@ msgstr "Количество (Ѧ)"
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-msgid "Aco Client"
+msgid "aWallet Core"
 msgstr "Клиент Aco"
 
 msgid "Balance"
@@ -242,7 +242,7 @@ msgstr "Производительность"
 msgid "Quit"
 msgstr "Выход"
 
-msgid "Quit Aco Client?"
+msgid "Quit aWallet Core?"
 msgstr "Завершить клиент Aco?"
 
 msgid "Receive Aco"

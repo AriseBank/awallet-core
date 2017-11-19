@@ -127,7 +127,7 @@ msgid "Are you sure?"
 msgstr ""
 
 #: client/app/index.html:5
-msgid "Aco Client"
+msgid "aWallet Core"
 msgstr ""
 
 #: client/app/src/accounts/view/manageBackground.html:13
@@ -764,7 +764,7 @@ msgid "Quit"
 msgstr ""
 
 #: client/app/src/accounts/account.controller.js:115
-msgid "Quit Aco Client?"
+msgid "Quit aWallet Core?"
 msgstr ""
 
 #: client/app/index.html:1043

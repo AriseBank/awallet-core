@@ -47,7 +47,7 @@ msgstr "Persetujuan"
 msgid "Are you sure?"
 msgstr "Anda Yakin?"
 
-msgid "Aco Client"
+msgid "aWallet Core"
 msgstr "Client ACO"
 
 msgid "Balance"
@@ -275,7 +275,7 @@ msgstr "Produktifitas"
 msgid "Quit"
 msgstr "Berhenti"
 
-msgid "Quit Aco Client?"
+msgid "Quit aWallet Core?"
 msgstr "Keluar dari Client Aco?"
 
 msgid "Rank"

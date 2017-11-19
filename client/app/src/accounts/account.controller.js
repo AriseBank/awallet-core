@@ -136,7 +136,7 @@
 
     self.closeApp = function() {
       var confirm = $mdDialog.confirm()
-        .title(gettextCatalog.getString('Quit Aco Client?'))
+        .title(gettextCatalog.getString('Quit aWallet Core?'))
         .theme(self.currentTheme)
         .ok(gettextCatalog.getString('Quit'))
         .cancel(gettextCatalog.getString('Cancel'));

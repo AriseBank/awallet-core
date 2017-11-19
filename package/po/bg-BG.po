@@ -104,7 +104,7 @@ msgstr "Арабски"
 msgid "Are you sure?"
 msgstr "Сигурни ли сте?"
 
-msgid "Aco Client"
+msgid "aWallet Core"
 msgstr "ACO клиент"
 
 msgid "Background"
@@ -512,7 +512,7 @@ msgstr "QR сканиране"
 msgid "Quit"
 msgstr "Изход"
 
-msgid "Quit Aco Client?"
+msgid "Quit aWallet Core?"
 msgstr "Изход от Лиск клиента?"
 
 msgid "Rank"

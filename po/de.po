@@ -104,8 +104,8 @@ msgstr "Arabisch"
 msgid "Are you sure?"
 msgstr "Bist du sicher?"
 
-msgid "Aco Client"
-msgstr "Aco Client"
+msgid "aWallet Core"
+msgstr "aWallet Core"
 
 msgid "Background"
 msgstr "Hintergrund"
@@ -506,8 +506,8 @@ msgstr "QR-Scanner"
 msgid "Quit"
 msgstr "Schließen"
 
-msgid "Quit Aco Client?"
-msgstr "Aco Client wirklich schließen?"
+msgid "Quit aWallet Core?"
+msgstr "aWallet Core wirklich schließen?"
 
 msgid "Rank"
 msgstr "Rang"

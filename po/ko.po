@@ -104,7 +104,7 @@ msgstr "아랍어"
 msgid "Are you sure?"
 msgstr "확실합니까?"
 
-msgid "Aco Client"
+msgid "aWallet Core"
 msgstr "아크 클라이언트"
 
 msgid "Background"
@@ -512,7 +512,7 @@ msgstr "QR 스캐너"
 msgid "Quit"
 msgstr "끝내기"
 
-msgid "Quit Aco Client?"
+msgid "Quit aWallet Core?"
 msgstr "아크 클라이언트를 종료할까요?"
 
 msgid "Rank"

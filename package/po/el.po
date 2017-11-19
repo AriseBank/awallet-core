@@ -50,8 +50,8 @@ msgstr "Έγκριση"
 msgid "Are you sure?"
 msgstr "Είστε σίγουρος;"
 
-msgid "Aco Client"
-msgstr "Aco Client"
+msgid "aWallet Core"
+msgstr "aWallet Core"
 
 msgid "Balance"
 msgstr "Υπόλοιπο"
@@ -341,8 +341,8 @@ msgstr "Παραγωγικότητα"
 msgid "Quit"
 msgstr "Τερματισμός"
 
-msgid "Quit Aco Client?"
-msgstr "Τερματισμός του Aco Client ;"
+msgid "Quit aWallet Core?"
+msgstr "Τερματισμός του aWallet Core ;"
 
 msgid "Rank"
 msgstr "Κατάταξη"
