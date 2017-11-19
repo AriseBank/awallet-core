@@ -99,8 +99,8 @@
             themeDark: false,
           },
           devnet: {
-            nethash: '578e820911f24e039733b45e4882b73e301f813a0d2c31330dafda84534ffa23',
-            peerseed: 'http://167.114.29.55:2010',
+            nethash: 'd7081980ea80a96b0fb455bf2ba623f4ce2d0e7eb96c38e93847168b0fb05c42',
+            peerseed: 'http://51.15.48.246:2010',
             token: 'DACO',
             symbol: 'Dâ',
             version: 30,
